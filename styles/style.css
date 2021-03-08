@@ -11,6 +11,12 @@
 
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
 
 /*-NAVIGATION BAR-*/
 
@@ -71,6 +77,7 @@
 /*-HERO IMAGE-*/
 
 #home{
+    margin-top: 74px;
     border: 1px red solid;
     height: 60vh;
 }
@@ -95,6 +102,9 @@
 /*-FOOTER-*/
 footer{
     text-align: center;
+    border: 1px purple solid;
+    height: 10vh;
+    padding: 1%;
 }
 
 
@@ -209,6 +219,13 @@ footer{
         text-decoration: none;
         color: black;
     }
+
+    /*-FOOTER-*/
+    footer{
+        text-align: center;
+        border: 1px purple solid;
+    }
+
 
     
 
