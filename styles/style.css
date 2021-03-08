@@ -22,7 +22,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: orangered;
-    /*font-family: "Poppins", sans-serif;*/
+    
 }
 
 
@@ -127,6 +127,15 @@ footer{
         overflow-x: hidden;
     }
     
+
+    /*-NAVIGATION BAR-*/
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+
     .nav-links {
         position: fixed;
         right: 0px;
@@ -154,7 +163,7 @@ footer{
     .nav-active {
         transform: translateX(0%);
     }
-    
+
     @keyframes navLinkFade {
         from {
             opacity: 0;
@@ -165,19 +174,25 @@ footer{
             transform: translateX(0);
         }
     }
-    
+
     .toggle .line1 {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
-    
+
     .toggle .line2 {
         opacity: 0;
     }
-    
+
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
     
+    /*-MAIN CONTENT-*/
+    .wrapper{
+        padding: 0 10px;
+    }
+
 
 }
 
