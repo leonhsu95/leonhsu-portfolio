@@ -12,16 +12,16 @@
     <title>Leon Hsu Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div id="logo">
-                <h4>The Nav</h4>
+                <h1>The Nav</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#hero-image">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#works">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -31,17 +31,38 @@
         </nav>
     </header>
 
-    <main>
-        <section id="home"></section>
-        <section id="about-us"></section>
-        <section id="works"></section>
-        <section id="contact-us"></section>
+    <div id="home">
+        <img srcset="" sizes="" src="" alt="Leon Hsu">
+    </div>
+
+    <main class="wrapper">
+        <section id="aboutme" class="link-section">
+            <h2>About Me</h2>
+            <p>This is a section</p>
+        </section>
+        <section id="works" class="link-section">
+            <h2>Works</h2>
+            <p>This is a section</p>
+        </section>
+        <section id="contact" class="link-section">
+            <h2>Contact</h2>
+            <p>Reach out for me here: </p>
+            <ul id="contact-links">
+                <li class="contact-links-items">Phone</li>
+                <li class="contact-links-items">Email</li>
+                <li class="contact-links-items">Website</li>
+                <li class="contact-links-items">GitHub</li>
+                <li class="contact-links-items">Twitter</li>
+                
+            </ul>
+        </section>
     </main>
 
     <footer id="footer">
-        
+        <small>Developed by Leon Hsu</small>
       
     </footer>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>

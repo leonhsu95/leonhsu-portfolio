@@ -4,17 +4,27 @@
     box-sizing: border-box;
 }
 
+.wrapper{
+    margin: 0 auto;
+    max-width: 1440px;
+    border: 1px blue solid;
+
+}
+
+
+/*-NAVIGATION BAR-*/
+
 nav {
-    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5D4954;
-    font-family: "Poppins", sans-serif;
+    background-color: orangered;
+    /*font-family: "Poppins", sans-serif;*/
 }
+
 
 #logo {
     color: rgb(226, 226, 226);
@@ -53,16 +63,64 @@ nav {
     transition: all 0.3s ease;
 }
 
-/*----------TABLET----------*/
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+/*-HERO IMAGE-*/
+
+#home{
+    border: 1px red solid;
+    height: 60vh;
+}
+
+
+/*-MAIN-*/
+.link-section{
+    margin: 20px auto;
+    border: 1px black dashed;
+}
+
+.link-section h2{
+    display: inline-block;
+    clear: both;
+}
+
+#contact-links{
+    list-style-type: none;
+}
+
+
+/*-FOOTER-*/
+footer{
+    text-align: center;
+}
+
+
+
+
+
+/*------------------------------TABLET--------------------------------*/
 
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 60%;
     }
+
 }
 
 
-/*----------MOBILE----------*/
+
+
+
+
+
+
+
+
+/*------------------------------MOBILE--------------------------------*/
+
 
 @media screen and (max-width: 768px) {
     body {
@@ -72,9 +130,9 @@ nav {
     .nav-links {
         position: fixed;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #5D4954;
+        height: 100%;
+        top: 1vh;
+        background-color: orangered;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -90,6 +148,7 @@ nav {
     .burger {
         display: block;
         cursor: pointer;
+        z-index: 1;
     }
 }
 
@@ -118,6 +177,10 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+  
 }
 
 
