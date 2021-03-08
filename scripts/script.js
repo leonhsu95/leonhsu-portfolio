@@ -13,6 +13,7 @@ function navSlide() {
             if (link.style.animation) {
                 link.style.animation = ""
             } 
+            
             else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
             }
@@ -39,7 +40,9 @@ const sticky = navbar.offsetTop;
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-  } else {
+  } 
+  
+  else {
     navbar.classList.remove("sticky");
   }
 }
