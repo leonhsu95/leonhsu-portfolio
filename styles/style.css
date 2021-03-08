@@ -98,6 +98,23 @@
     list-style-type: none;
 }
 
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-container a{
+    display: block;
+    border: 1px red solid;
+    
+}
+
+#contact a:link{
+    text-decoration: none;
+    color: black;
+}
+
 
 /*-FOOTER-*/
 footer{
@@ -136,7 +153,10 @@ footer{
     body {
         overflow-x: hidden;
     }
-    
+
+    header {
+        z-index: 1;
+    }
 
     /*-NAVIGATION BAR-*/
     .sticky {
@@ -150,14 +170,15 @@ footer{
         position: fixed;
         right: 0px;
         height: 100%;
-        top: 1vh;
-        background-color: orangered;
+        top: 2vh;
+        background-color: blue;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: -1;
     }
     
     .nav-links li {
@@ -167,7 +188,7 @@ footer{
     .burger {
         display: block;
         cursor: pointer;
-        z-index: 1;
+        
     }
 
     .nav-active {
@@ -196,11 +217,20 @@ footer{
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-
     
     /*-MAIN CONTENT-*/
     .wrapper{
         padding: 0 10px;
+    }
+
+    /*-HERO IMAGE-*/
+
+    #home{
+        display: block;
+        position: relative;
+        margin-top: 50px;
+        border: 1px red solid;
+        height: 60vh;
     }
 
     .contact-container{
