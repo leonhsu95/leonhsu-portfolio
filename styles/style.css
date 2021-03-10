@@ -238,9 +238,9 @@ header {
 
 #contact-form
 {
-	max-width: 1000px;
+	max-width: 1200px;
     margin: auto;
-    padding: 30px;
+    padding: 50px;
 	border: none;
 	background-color: #f7b556;
     border-radius: 20px;
@@ -292,27 +292,63 @@ header {
 .text-input
 {
 	width: 50%;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    min-width: 400px;
+}
+
+textarea
+{
+	width: 50%;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+#phone
+{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+
+}
+
+#email
+{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+
+}
+
+.formcomment{
+    margin-top: 20px;
 }
 
 #contact-form textarea
 {
 	width: 100%;
-	margin-bottom: 10px;
+    margin: 10px 0 30px 0;
 }
 
 #submit
 {
 	padding: 5px;
-	border-radius: 10%;
+	border-radius: 10px;
 	box-shadow: 0 0 0 0;
 	background-color: #f16400;
 	color: white;
 	font-size: 0.9em;
 	font-weight: bold;
-	width: 100px;
+	width: 150px;
+    height: 40px;
 	display: block;
 	position: relative;
 	margin: auto;
+    border: none;
 }
 
 /*-SOCIAL LINKS-*/
