@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     
+    
     <title>Leon Hsu Portfolio</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
                 <h1>Leon Hsu</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#hero-image">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#aboutme">About</a></li>
-                <li><a href="#works">Work</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger">
@@ -57,27 +58,120 @@
                  </p>
             </div>
         </section>
-        <section id="works" class="link-section">
-            <h2 class="section-heading">Works</h2>
-            <p>This is a section</p>
+        <section id="portfolio" class="link-section">
+            <h2 class="section-heading">Portfolio</h2>
             <div id="works-square">
+                  <div class="works-container">
+                    <a href=""><img class="square" src="assets/designs/idoleyes-square.png" alt="Idoleyes Australia">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">WordPress Ecommerce</span><br><span class="works-tag2">Idol Eyes Australia</span></p></div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div class="works-container">
+                    <a href=""><img class="square" src="assets/designs/sportswarehouse-square.png" alt="Sports Warehouse">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">Coded Ecommerce Website</span><br><span class="works-tag2">Sports Warehouse</span></p></div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div class="works-container">
+                    <a href=""><img class="square" src="assets/designs/sunnyspot-square.png" alt="Sunnyspot Holidays">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">Coded Website</span><br><span class="works-tag2">Sunnyspot Holidays</span></p></div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div id="hillsfamilyphysio" class="works-container">
+                    <a href=""><img class="square" src="assets/designs/hillsfamilyphysio-square.png" alt="Hills Family Physio">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">WordPress Static Website</span><br><span class="works-tag2">Hills Family Physio</span></p></div>
+                    </div>
+                    </a>
+                  </div>
 
-            </div>
+                  <div class="works-container">
+                    <a href=""><img class="square" src="assets/designs/idoleyes-square.png" alt="Idoleyes Australia">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">WordPress Ecommerce</span><br><span class="works-tag2">Idol Eyes Australia</span></p></div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div class="works-container">
+                    <a href=""><img class="square" src="assets/designs/sportswarehouse-square.png" alt="Sports Warehouse">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">Coded Ecommerce Website</span><br><span class="works-tag2">Sports Warehouse</span></p></div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div class="works-container">
+                    <a href=""><img class="square" src="assets/designs/sunnyspot-square.png" alt="Sunnyspot Holidays">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">Coded Website</span><br><span class="works-tag2">Sunnyspot Holidays</span></p></div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div class="works-container">
+                    <a href=""><img class="square" src="assets/designs/hillsfamilyphysio-square.png" alt="Hills Family Physio">
+                    <div class="overlay">
+                      <div class="works-text"><p><span class="works-tag1">WordPress Static Website</span><br><span class="works-tag2">Hills Family Physio</span></p></div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                </div>
         </section>
-        <section id="contact" class="link-section">
-            <h2>Contact</h2>
-            <p>Reach out for me here: </p>
-            <div class="contact-container">
-                <a href="#"><div class="contact-links">Phone</div></a>
-                <a href="#"><div class="contact-links">Email</div></a>
-                <a href="#"><div class="contact-links">GitHub</div></a>
-                <a href="#"><div class="contact-links">Website</div></a>
-            </div>
-
+        <section id="contact" class="link-section flex-container">
+                <h2 class="section-heading">Contact Me</h2>
+                <form id="contact-form" action="#" method="post" novalidate="" >
+                    <fieldset>
+                        <p class="formfields">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" class="text-input" value="">                        </p>
+                        <p class="formfields">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" class="text-input" value="">
+                            
+                        </p>
+                        <p class="formfields">
+                            <label for="phone">Phone:</label>
+                            <input type="text" name="phone" id="phone" class="text-input">
+                        </p>
+                        <p class="formfields">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" class="text-input" value="">
+                        </p>
+        
+                        <p class="formcomment">
+                        <label for="comment" class="textlabel">Comments:</label>
+                        <textarea name="comment" id="comment" rows="6"></textarea>
+                        </p>
+                        <p class="formsubmit">
+                        <input type="submit" name="submit" value="Submit" id="submit">
+                        </p>
+                    </fieldset>
+                </form>
+                
+           
         </section>
     </main>
 
     <footer id="footer">
+        <nav id="social" class="link-section">
+            <h4>Let's Connect</h4>
+            <div class="social-container">
+                <a href="#"><div class="contact-links"><i class="fas fa-phone"></i></div></a>
+                <a href="#"><div class="contact-links"><i class="fas fa-envelope-square"></i></div></a>
+                <a href="#"><div class="contact-links"><i class="fab fa-github"></i></div></a>
+                <a href="#"><div class="contact-links"><i class="fab fa-linkedin"></i></div></a>
+            </div>
+        </nav>
         <small>Developed by Leon Hsu</small>
       
     </footer>
