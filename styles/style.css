@@ -1,7 +1,14 @@
+:root{
+    --shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
 }
 
 .wrapper{
@@ -28,6 +35,7 @@
     align-items: center;
     min-height: 8vh;
     background-color: orangered;
+    box-shadow: var(--shadow);
     
 }
 
@@ -85,13 +93,56 @@
 
 /*-MAIN-*/
 .link-section{
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
+    padding: 10px;
     border: 1px black dashed;
 }
 
-.link-section h2{
+.link-section p{
+    line-height: 2;
+}
+
+.section-heading{
     display: inline-block;
     clear: both;
+    font-size: 2.4em;
+    margin: 20px 0;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#aboutme{
+    display: flex;
+}
+
+.leonhsu{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.link-section h3{
+    display: inline-block;
+    clear: both;
+    font-size: 1.4em;
+    margin: 20px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-left{
+    width: 50%;
+    padding: 10px;
+    border: 1px green solid;
+}
+
+.section-right{
+    width: 50%;
+    padding: 10px;
+    border: 1px blueviolet solid;
+}
+
+#works-square{
+    display: flex;
 }
 
 #contact-links{
@@ -120,8 +171,8 @@
 footer{
     text-align: center;
     border: 1px purple solid;
-    height: 10vh;
-    padding: 1%;
+    min-height: 100px;
+    padding: 10px;
 }
 
 
@@ -159,13 +210,7 @@ footer{
     }
 
     /*-NAVIGATION BAR-*/
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      
-
+   
     .nav-links {
         position: fixed;
         right: 0px;
@@ -228,7 +273,7 @@ footer{
     #home{
         display: block;
         position: relative;
-        margin-top: 50px;
+        margin-top: 60px;
         border: 1px red solid;
         height: 60vh;
     }
