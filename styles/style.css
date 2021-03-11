@@ -225,11 +225,21 @@ header {
   justify-content: space-around;
 }
 
+.sc-regular{
+    display: none;
+}
+
 .works-container{
   position: relative;
   width: 28%;
   margin: 20px 5px;
 }
+
+.featured-works-container{
+    position: relative;
+    width: 100%;
+    margin: 10px;
+  }
 
 .square{
   display: block;
@@ -707,9 +717,6 @@ footer i{
           
       }
     
-      
-    
-    
 
     /*-MAIN-*/
 
@@ -738,6 +745,14 @@ footer i{
  
     /*-PORTFOLIO-*/
 
+    .sc-featured{
+        display: none;
+    }
+
+    .sc-regular{
+        display: block;
+    }
+    
     #works-square{
         margin: 0 10px;
         display: flex;
