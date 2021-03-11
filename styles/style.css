@@ -625,7 +625,7 @@ footer i{
     /*-BANNER-*/
 
     #banner{
-        display: block;
+        display: none;
         padding-top: 10px;
     }
 
