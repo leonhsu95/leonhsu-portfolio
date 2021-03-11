@@ -108,9 +108,7 @@ header {
 
 /*-BANNER-*/
 #banner{
-    border: 1px red solid;
-    height: 600px;
-    margin-top: 75px;
+    padding-top: 30px;
     background-color: aliceblue;   
 }
 
@@ -123,10 +121,11 @@ header {
 
 .banner-left{
   width: 50%;  
+  display: flex;
 }
 
 .banner-content {
-    margin-top: 30px;
+    margin: auto;
 }
 
 .banner-left p{
@@ -156,9 +155,6 @@ header {
 .banner-right img{
     margin: auto;
 }
-
-
-
 
 /*-MAIN-*/
 .link-section{
@@ -486,13 +482,26 @@ footer i{
     transform: rotate(90deg);
 }
 
+/*------------------------------DESKTOP--------------------------------*/
+
+@media screen and (min-width: 1024px) {
+    
+    /*-BANNER-*/
+    #banner{
+        height: 600px;
+    }
+    
+}
+
+
+
 
 
 
 
 /*------------------------------TABLET--------------------------------*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .nav-links {
         width: 60%;
     }
@@ -543,7 +552,11 @@ footer i{
         position: fixed;
         top: 0;
         width: 100%;
-      }    
+    }
+    
+    .wrapper{
+        padding: 0;
+    }
 
     /*-NAVIGATION BAR-*/
    
@@ -573,6 +586,7 @@ footer i{
 
     .nav-links a{
         font-size: 1em;
+        margin-right: 10px;
     }
     
     .burger {
@@ -612,19 +626,66 @@ footer i{
 
     #banner{
         display: block;
-        border: 1px red solid;
-        height: 62vh;
-        margin-top: 60px;
-    } 
-    
-    .wrapper{
-        padding: 0;
+        padding-top: 10px;
     }
+
+    .banner-container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+    .banner-left{
+        width: 100%;  
+      }
+      
+      .banner-content {
+          margin: auto;
+      }
+
+      .banner-content *{
+          text-align: center;
+      }
+      
+      .banner-left p{
+          line-height: 1.5;
+          font-size: 1em;
+      }
+      
+      .banner-content h3{
+          
+          font-size: 1.5em;
+          margin-bottom: 20px;
+      
+      }
+      
+      .banner-content h1{
+          
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      
+      .banner-right{
+          width: 100%;
+      }
+      
+      .banner-right img{
+          margin: auto;
+          margin-bottom: 20px;
+          width: 150px;
+
+          
+      }
+      
+    
+    
 
     /*-MAIN-*/
 
     .section-left{
         display: none;
+        width: 100%;
     }
     
     .section-right{
@@ -632,11 +693,17 @@ footer i{
         padding: 10px 10px 10px 20px
     }
 
+
+
     /*-ABOUT ME-*/
 
     #aboutme{
        flex-wrap: wrap-reverse;
     }
+
+    #aboutme p{
+        line-height: 1.5;
+     }
    
  
     /*-PORTFOLIO-*/
