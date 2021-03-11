@@ -42,13 +42,27 @@ header {
 
 
 #logo {
-    color: rgb(226, 226, 226);
+    color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
 #logo h2{
     font-size: 30px;
+}
+
+#logo a:link{
+    text-decoration: none;
+    color: white;
+}
+
+#logo a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#logo a:hover{
+    opacity: 0.8;
 }
 
 .nav-links {
@@ -223,10 +237,6 @@ header {
   flex-wrap: wrap;
   flex: 3;
   justify-content: space-around;
-}
-
-.sc-regular{
-    display: none;
 }
 
 .works-container{
@@ -602,8 +612,8 @@ footer i{
         display: block;
         position: fixed;
         right: 0px;
-        height: 100%;
-        top: 0;
+        height: 100vh;
+        top: 0vh;
         background-color: var(--charcoal);
         opacity: 0.9;
         width: 50%;
@@ -624,7 +634,7 @@ footer i{
 
     .nav-links a{
         font-size: 1em;
-        margin-right: 10px;
+        padding-right: 20px;
     }
     
     .burger {
@@ -744,15 +754,7 @@ footer i{
    
  
     /*-PORTFOLIO-*/
-
-    .sc-featured{
-        display: none;
-    }
-
-    .sc-regular{
-        display: block;
-    }
-    
+  
     #works-square{
         margin: 0 10px;
         display: flex;
@@ -775,7 +777,8 @@ footer i{
         z-index: 0;
         border-radius: 0;
     }
-      
+
+    
     
     .works-container:hover .overlay 
     {
