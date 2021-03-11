@@ -1,5 +1,9 @@
 :root{
     --shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    --fade: all 0.3s ease-in;
+    --charcoal: #1c1b20;
+    --casblue: #5590cc;
+    --casmandarin: #f7b556;
     
 }
 
@@ -47,8 +51,11 @@ header {
 #logo {
     color: rgb(226, 226, 226);
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+#logo h2{
+    font-size: 30px;
 }
 
 .nav-links {
@@ -69,6 +76,19 @@ header {
     font-size: 14px;
 }
 
+.nav-links a:visited {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+    transition: var(--fade);
+}
+
 .burger {
     display: none;
 }
@@ -78,7 +98,7 @@ header {
     height: 3px;
     background-color: rgb(226, 226, 226);
     margin: 5px;
-    transition: all 0.3s ease;
+    transition: var(--fade);
 }
 
 .nav-active {
@@ -86,12 +106,58 @@ header {
 }
 
 
-/*-HERO IMAGE-*/
-
+/*-BANNER-*/
 #banner{
     border: 1px red solid;
-    height: 60vh;
+    height: 600px;
+    margin-top: 75px;
+    background-color: aliceblue;   
 }
+
+.banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+.banner-left{
+  width: 50%;  
+}
+
+.banner-content {
+    margin-top: 30px;
+}
+
+.banner-left p{
+    line-height: 2;
+    font-size: 1.2em;
+}
+
+.banner-content h3{
+    
+    font-size: 3em;
+    margin-bottom: 20px;
+
+}
+
+.banner-content h1{
+    
+    font-size: 5em;
+    margin-bottom: 20px;
+
+}
+
+.banner-right{
+    width: 50%;
+    display: flex;
+}
+
+.banner-right img{
+    margin: auto;
+}
+
+
 
 
 /*-MAIN-*/
@@ -114,14 +180,19 @@ header {
 }
 
 .section-left{
-    width: 50%;
-    /*border: 1px green solid;*/
+    width: 49%;  
+}
+
+.section-left img{
+    display: block;
+    height: auto;
 }
 
 .section-right{
-    width: 50%;
-    padding: 10px 10px 10px 20px;
-    /*border: 1px blueviolet solid;*/
+    width: 51%;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    
 }
 
 /*-ABOUT ME-*/
@@ -129,6 +200,7 @@ header {
 #aboutme{
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--casblue);
 }
 
 .leonhsu{
@@ -136,13 +208,18 @@ header {
     text-transform: uppercase;
 }
 
-.link-section h3{
+#aboutme h3{
     display: inline-block;
     clear: both;
     font-size: 1.4em;
-    margin: 20px 0;
+    margin: 40px 0;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+#aboutme p{
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 /*-PORTFOLIO-*/
@@ -155,13 +232,13 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 4;
-  justify-content: space-evenly;
+  flex: 3;
+  justify-content: space-around;
 }
 
 .works-container{
   position: relative;
-  width: 22%;
+  width: 28%;
   margin: 20px 5px;
 }
 
@@ -230,6 +307,8 @@ header {
 /*-CONTACT FORM-*/
 #contact{
     padding: 10px;
+    padding-bottom: 50px;
+    background-color: white;
 }
 
 #contact h2{
@@ -321,7 +400,6 @@ textarea
     display: inline-block;
     position: relative;
     left: 10px;
-
 }
 
 .formcomment{
@@ -347,23 +425,32 @@ textarea
     height: 40px;
 	display: block;
 	position: relative;
-	margin: auto;
-    border: none;
+	border: none;
+    font-size: 1em;
+    letter-spacing: 2px;
+    
+}
+
+#submit:hover{
+    opacity: 0.8;
+    transition: var(--fade);
 }
 
 /*-FOOTER-*/
 footer{
+    
     text-align: center;
-    /*border: 1px purple solid;*/
+    color: whitesmoke;
     min-height: 100px;
-    padding: 10px;
+    padding: 30px;
+    background-color: var(--charcoal);
 }
 
 footer i{
    display: inline-block;
-   font-size: 30px;
-   margin: 10px;
-   color: black;
+   font-size: 28px;
+   margin: 30px 20px;
+   
 }
 
 /*-SOCIAL LINKS-*/
@@ -381,19 +468,18 @@ footer i{
 
 #social a:link{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
 #social a:visited{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
 #social a:hover{
     text-decoration: none;
-    color: black;
-    opacity: 0.8;
-    transition: all 0.3s ease-in;
+    opacity: 0.7;
+    transition: var(--fade);
 }
 
 .fa-phone{
@@ -467,7 +553,8 @@ footer i{
         right: 0px;
         height: 100%;
         top: 1vh;
-        background-color: blue;
+        background-color: var(--charcoal);
+        opacity: 0.9;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
@@ -482,6 +569,10 @@ footer i{
         top: 70px;
         margin: 20px 10px;
         text-align: right;
+    }
+
+    .nav-links a{
+        font-size: 1em;
     }
     
     .burger {
@@ -517,12 +608,13 @@ footer i{
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    /*-HERO IMAGE-*/
+    /*-BANNER-*/
 
     #banner{
         display: block;
         border: 1px red solid;
-        height: 60vh;
+        height: 62vh;
+        margin-top: 60px;
     } 
     
     .wrapper{
@@ -532,15 +624,12 @@ footer i{
     /*-MAIN-*/
 
     .section-left{
-        width: 100%;
-        /*border: 1px green solid;*/
         display: none;
     }
     
     .section-right{
         width: 100%;
-        padding: 10px 10px 10px 20px;
-        /*border: 1px blueviolet solid;*/
+        padding: 10px 10px 10px 20px
     }
 
     /*-ABOUT ME-*/
@@ -553,12 +642,13 @@ footer i{
     /*-PORTFOLIO-*/
 
     #works-square{
+        margin: 0 10px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         flex: 2;
         justify-content: space-evenly;
-        padding: 10px;
+        padding: 10px 10px 30px 10px;
       }
        
     .square
@@ -640,6 +730,7 @@ footer i{
      /*-CONTACT FORM-*/
      #contact{
          padding: 10px;
+         background-color: #f7b556;
      }
      
      #contact h2{
@@ -753,14 +844,18 @@ footer i{
          height: 40px;
          display: block;
          position: relative;
-         margin: auto;
+         margin-bottom: 30px;
          border: none;
      }
 
     /*-FOOTER-*/
     footer{
-        text-align: center;
-        border: 1px purple solid;
+        text-align: center;   
+    }
+
+    /*-SOCIAL LINKS-*/
+    #social h4{
+        margin: 10px 0;
     }
 
 
