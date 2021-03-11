@@ -291,12 +291,12 @@ header {
 
 .text-input
 {
-	width: 50%;
+	width: 75%;
     margin-left: 10px;
     padding: 5px;
     border-radius: 10px;
     border: none;
-    min-width: 400px;
+    
 }
 
 textarea
@@ -351,7 +351,25 @@ textarea
     border: none;
 }
 
+/*-FOOTER-*/
+footer{
+    text-align: center;
+    border: 1px purple solid;
+    min-height: 100px;
+    padding: 10px;
+}
+
+footer i{
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   color: black;
+}
+
 /*-SOCIAL LINKS-*/
+#social{
+    margin-top: 10px;
+}
 
 .social-container{
     display: flex;
@@ -372,22 +390,6 @@ textarea
 }
 
 
-/*-FOOTER-*/
-footer{
-    text-align: center;
-    border: 1px purple solid;
-    min-height: 100px;
-    padding: 10px;
-}
-
-footer i{
-   display: inline-block;
-   width: 50px;
-   height: 50px;
-   color: black;
-}
-
-
 
 
 
@@ -397,6 +399,24 @@ footer i{
     .nav-links {
         width: 60%;
     }
+
+
+    /*-CONTACT FORM-*/
+    #phone
+     {
+         display: inline-block;
+         position: relative;
+         left: 0px;
+     
+     }
+     
+     #email
+     {
+         display: inline-block;
+         position: relative;
+         left: 0px;
+     
+     }
 
 }
 
@@ -415,6 +435,7 @@ footer i{
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
+        width: 100%;
     }
 
     header {
@@ -492,22 +513,41 @@ footer i{
     /*-PORTFOLIO-*/
 
     #works-square{
-        display: block;
+        display: flex;
         flex-direction: row;
-    }
-    
-    .works-container 
-    {
-      width: 100%;
-    }
-    
-    .image 
+        flex-wrap: wrap;
+        flex: 2;
+        justify-content: space-evenly;
+        padding: 10px;
+      }
+       
+    .square
     {
       display: block;
-      width: 100%;
       height: auto;
     }
+      
+    .works-container{
+        width: 100%;
+        margin: auto;
+        z-index: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      
     
+    .works-container:hover .overlay 
+    {
+      opacity: 0.8;
+    }
+    
+    .square
+    {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+    }
+
     .overlay 
     {
       position: absolute;
@@ -518,21 +558,10 @@ footer i{
       height: 100%;
       width: 100%;
       opacity: 0;
-      transition: .5s ease;
       background-color: black;
-    
+      border-radius: 0px;
     }
-    
-    .works-container a
-    {
-      z-index: 1;
-    }
-    
-    .works-container:hover .overlay 
-    {
-      opacity: 0.8;
-    }
-    
+
     .works-text 
     {
       color: white;
@@ -550,13 +579,7 @@ footer i{
       left: 80px;
       text-align: left;
     }
-    
-    .square
-    {
-      width: 100%;
-      height: 100%;
-    }
-    
+       
     .works-tag1
     {
       display: inline-block;
@@ -573,24 +596,126 @@ footer i{
       font-size: 2em;
       margin: 20px 0;
      }
-            
-    /*-CONTACT-*/
-    .contact-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .contact-container a{
-        display: block;
-        border: 1px red solid;
-        width: 50%;
-    }
-
-    #contact a:link{
-        text-decoration: none;
-        color: black;
-    }
+     
+     /*-CONTACT FORM-*/
+     #contact{
+         padding: 10px;
+     }
+     
+     #contact h2{
+         padding-left: 10px;
+     }
+     
+     #contact-form
+     {
+         max-width: 1200px;
+         margin: auto;
+         padding: 10px;
+         border: none;
+         background-color: #f7b556;
+         border-radius: 10px;
+     }
+     
+     #contact-heading
+     {
+         font-family: "Open Sans", sans-serif;
+         margin: 20px auto;
+         text-align: center;
+     }
+     
+     #contact-form fieldset
+     {
+         border: none;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         
+     }
+     
+     #contact-form h2	
+     {
+         margin-bottom: 20px;
+     }
+     
+     .formfields
+     {
+         display: inline-block;
+         margin-bottom: 10px;
+         width: 50%;
+     }
+     
+     #contact-form label
+     {
+         font-size: 1.1em;
+         min-width: 80px;
+         display: inline-block;
+         clear: both;
+     }
+     
+     .text-input
+     {
+        display: inline-block;
+        flex-grow: 1; 
+        min-width: 42vw;
+        width: 43vw;
+        margin-left: 0px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        clear: both;
+     }
+     
+     textarea
+     {
+         width: 50%;
+         margin-left: 10px;
+         padding: 5px;
+         border-radius: 5px;
+         border: none;
+     }
+     
+     #phone
+     {
+         display: inline-block;
+         position: relative;
+         left: 0px;
+     
+     }
+     
+     #email
+     {
+         display: inline-block;
+         position: relative;
+         left: 0px;
+     
+     }
+     
+     .formcomment{
+         margin-top: 20px;
+     }
+     
+     #contact-form textarea
+     {
+         width: 100%;
+         margin: 10px 0 30px 0;
+     }
+     
+     #submit
+     {
+         padding: 5px;
+         border-radius: 10px;
+         box-shadow: 0 0 0 0;
+         background-color: #f16400;
+         color: white;
+         font-size: 0.9em;
+         font-weight: bold;
+         width: 150px;
+         height: 40px;
+         display: block;
+         position: relative;
+         margin: auto;
+         border: none;
+     }
 
     /*-FOOTER-*/
     footer{
